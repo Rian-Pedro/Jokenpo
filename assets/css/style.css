@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'K2D', sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+    outline: 0;
+    border: none;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+
+section#msg{
+    width: 100%;
+    height: 100vh;
+    align-self: center;
+    position: fixed;
+    backdrop-filter: blur(5px) saturate(100%) brightness(70%);
+}
+
+section#msg div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+    margin: 15% auto;
+}
+
+section#msg div h1{
+    font-weight: 800;
+    padding: 10px;
+}
+
+section#msg div button{
+    color: #000;
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+section#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h1:nth-child(1){
+    font-weight: 100;
+}
+
+h1:nth-child(3){
+    font-weight: 800;
+    text-align: center;
+}
+
+div#opcoes{
+    display: flex;
+    gap: 45px;
+}
+
+.opcao{
+    min-width: 120px;
+}
+
+.opcao .img{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.opcao p{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.Pedra{
+    background-image: url('../../images/pedra.svg');
+}
+
+.Papel{
+    background-image: url('../../images/papel.svg');
+}
+
+.Tesoura{
+    background-image: url('../../images/tesoura.svg');
+}
+
+#rival{
+    max-width: 120px;
+}
+
+#rival .opcao .img{
+    cursor: default;
+}
+
+.default{
+    background-image: url('../../images/default.svg');
+}
+
+.apagado{
+    display: none;
+}
